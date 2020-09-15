@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="716a028c-a146-4a33-ac18-a2632ce9e9b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/users/user_dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/users/user_dto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasources/mysql/users_db/users_db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/users/user_marshaller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logger/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/crypto_utils/crypto_utlis.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/date_utils/date_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/mysql_utils/mysql_utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/application.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/application.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/url_mappings.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/url_mappings.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/ping/ping_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ping/ping_controller.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/users/users_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/users/users_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/users/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/users/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/users/user_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/users/user_dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_dto.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/users_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/users_service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/errors/rest_error.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/errors/rest_error.go" afterDir="false" />
@@ -75,25 +81,41 @@
       <screen x="0" y="23" width="1440" height="832" />
     </state>
     <state x="583" y="376" key="#GOROOT/0.23.1440.832@0.23.1440.832" timestamp="1599498283488" />
-    <state x="255" y="101" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599500060931">
+    <state x="255" y="101" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599706861093">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state x="255" y="101" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.832@0.23.1440.832" timestamp="1599500060931" />
-    <state width="1257" height="216" key="GridCell.Tab.0.bottom" timestamp="1599589793366">
+    <state x="255" y="101" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.832@0.23.1440.832" timestamp="1599706861093" />
+    <state width="1588" height="162" key="GridCell.Tab.0.bottom" timestamp="1600145100291">
+      <screen x="0" y="23" width="1920" height="1012" />
+    </state>
+    <state width="1257" height="162" key="GridCell.Tab.0.bottom/-1440.552.1440.877/0.23.1920.1012@-1440.552.1440.877" timestamp="1600037032425" />
+    <state width="1588" height="162" key="GridCell.Tab.0.bottom/-1440.552.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600145100291" />
+    <state width="1257" height="124" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1600012632129" />
+    <state width="1257" height="162" key="GridCell.Tab.0.bottom/1920.587.1440.877/0.23.1920.1012@1920.587.1440.877" timestamp="1600026272049" />
+    <state width="1588" height="162" key="GridCell.Tab.0.center" timestamp="1600145100290">
+      <screen x="0" y="23" width="1920" height="1012" />
+    </state>
+    <state width="1257" height="162" key="GridCell.Tab.0.center/-1440.552.1440.877/0.23.1920.1012@-1440.552.1440.877" timestamp="1600037032424" />
+    <state width="1588" height="162" key="GridCell.Tab.0.center/-1440.552.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600145100290" />
+    <state width="1257" height="124" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1600012632129" />
+    <state width="1257" height="162" key="GridCell.Tab.0.center/1920.587.1440.877/0.23.1920.1012@1920.587.1440.877" timestamp="1600026272047" />
+    <state width="1588" height="162" key="GridCell.Tab.0.left" timestamp="1600145100289">
+      <screen x="0" y="23" width="1920" height="1012" />
+    </state>
+    <state width="1257" height="162" key="GridCell.Tab.0.left/-1440.552.1440.877/0.23.1920.1012@-1440.552.1440.877" timestamp="1600037032423" />
+    <state width="1588" height="162" key="GridCell.Tab.0.left/-1440.552.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600145100289" />
+    <state width="1257" height="124" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1600012632128" />
+    <state width="1257" height="162" key="GridCell.Tab.0.left/1920.587.1440.877/0.23.1920.1012@1920.587.1440.877" timestamp="1600026272047" />
+    <state width="1588" height="162" key="GridCell.Tab.0.right" timestamp="1600145100290">
+      <screen x="0" y="23" width="1920" height="1012" />
+    </state>
+    <state width="1257" height="162" key="GridCell.Tab.0.right/-1440.552.1440.877/0.23.1920.1012@-1440.552.1440.877" timestamp="1600037032424" />
+    <state width="1588" height="162" key="GridCell.Tab.0.right/-1440.552.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600145100290" />
+    <state width="1257" height="124" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1600012632129" />
+    <state width="1257" height="162" key="GridCell.Tab.0.right/1920.587.1440.877/0.23.1920.1012@1920.587.1440.877" timestamp="1600026272048" />
+    <state x="491" y="194" width="598" height="490" key="find.popup" timestamp="1599636614392">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state width="1257" height="216" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1599589793366" />
-    <state width="1257" height="216" key="GridCell.Tab.0.center" timestamp="1599589793366">
-      <screen x="0" y="23" width="1440" height="832" />
-    </state>
-    <state width="1257" height="216" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1599589793366" />
-    <state width="1257" height="216" key="GridCell.Tab.0.left" timestamp="1599589793365">
-      <screen x="0" y="23" width="1440" height="832" />
-    </state>
-    <state width="1257" height="216" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1599589793365" />
-    <state width="1257" height="216" key="GridCell.Tab.0.right" timestamp="1599589793366">
-      <screen x="0" y="23" width="1440" height="832" />
-    </state>
-    <state width="1257" height="216" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1599589793366" />
+    <state x="491" y="194" width="598" height="490" key="find.popup/0.23.1440.832@0.23.1440.832" timestamp="1599636614392" />
   </component>
 </project>
