@@ -4,12 +4,8 @@ import "encoding/json"
 
 type PublicUser struct {
 	Id          int64  `json:"id"`
-	//FirstName   string `json:"first_name"`
-	//LastName    string `json:"last_name"`
-	//Email       string `json:"email"`
 	DateCreated string `json:"date_created"`
 	Status      string `json:"status"`   // active or not active
-	//Password 	string `json:"password"`
 }
 
 type PrivateUser struct {
@@ -19,7 +15,6 @@ type PrivateUser struct {
 	Email       string `json:"email"`
 	DateCreated string `json:"date_created"`
 	Status      string `json:"status"`   // active or not active
-	//Password 	string `json:"password"`
 }
 
 func (users Users) Marshall (isPublic bool) []interface{} {
@@ -41,8 +36,5 @@ func (user *User) Marshall (isPublic bool) interface{} {
 	userJson, _ := json.Marshal(user)
 	var privateUser PrivateUser
 	json.Unmarshal(userJson, &privateUser)
-	//if err := json.Unmarshal(userJson, &privateUser); err != nil {
-	//	return nil
-	//}
 	return privateUser
 }

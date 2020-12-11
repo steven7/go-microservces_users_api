@@ -1,74 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="716a028c-a146-4a33-ac18-a2632ce9e9b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/datasources/mysql/users_db/users_db.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/users/user_marshaller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logger/logger.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/crypto_utils/crypto_utlis.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/date_utils/date_utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/mysql_utils/mysql_utils.go" afterDir="false" />
+    <list default="true" id="453614f4-dfdd-4319-8eb8-ce778cfe06e2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/go-microservces_users_api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/application.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/application.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/url_mappings.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/url_mappings.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/users/users_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/users/users_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/users/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasources/mysql/users_db/users_db.go" beforeDir="false" afterPath="$PROJECT_DIR$/datasources/mysql/users_db/users_db.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/users/user_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_dao.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/users/user_dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/users/user_login_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_login_request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/users/user_marshaller.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_marshaller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/users_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/users_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/errors/rest_error.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/errors/rest_error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/mysql_utils/mysql_utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/mysql_utils/mysql_utils.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.14.7/libexec" />
+  <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1hBxOnYvfcC4tBNd5lU3hjrw1Ag" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1lSOGtCRu4leimVErzGK63s7ESw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/controllers/users" />
-      <recent name="$PROJECT_DIR$/controllers/ping" />
-    </key>
-  </component>
   <component name="RunManager">
-    <configuration name="go build go-microservces_users_api *.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
-      <module name="go-microservces_users_api" />
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="go-microservices_users_api" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
-      </EXTENSION>
-      <kind value="DIRECTORY" />
-      <filePath value="$PROJECT_DIR$/../go-microservces_users_api|$PROJECT_DIR$/main.go" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
       <package value="go-microservces_users_api" />
       <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="go-microservices_users_api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="go-microservces_users_api" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
   </component>
@@ -76,46 +77,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="583" y="376" key="#GOROOT" timestamp="1599498283488">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state x="613" y="393" key="#Go_Modules" timestamp="1607603577098">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="583" y="376" key="#GOROOT/0.23.1440.832@0.23.1440.832" timestamp="1599498283488" />
-    <state x="255" y="101" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599706861093">
-      <screen x="0" y="23" width="1440" height="832" />
-    </state>
-    <state x="255" y="101" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.832@0.23.1440.832" timestamp="1599706861093" />
-    <state width="1588" height="162" key="GridCell.Tab.0.bottom" timestamp="1600145100291">
-      <screen x="0" y="23" width="1920" height="1012" />
-    </state>
-    <state width="1257" height="162" key="GridCell.Tab.0.bottom/-1440.552.1440.877/0.23.1920.1012@-1440.552.1440.877" timestamp="1600037032425" />
-    <state width="1588" height="162" key="GridCell.Tab.0.bottom/-1440.552.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600145100291" />
-    <state width="1257" height="124" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1600012632129" />
-    <state width="1257" height="162" key="GridCell.Tab.0.bottom/1920.587.1440.877/0.23.1920.1012@1920.587.1440.877" timestamp="1600026272049" />
-    <state width="1588" height="162" key="GridCell.Tab.0.center" timestamp="1600145100290">
-      <screen x="0" y="23" width="1920" height="1012" />
-    </state>
-    <state width="1257" height="162" key="GridCell.Tab.0.center/-1440.552.1440.877/0.23.1920.1012@-1440.552.1440.877" timestamp="1600037032424" />
-    <state width="1588" height="162" key="GridCell.Tab.0.center/-1440.552.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600145100290" />
-    <state width="1257" height="124" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1600012632129" />
-    <state width="1257" height="162" key="GridCell.Tab.0.center/1920.587.1440.877/0.23.1920.1012@1920.587.1440.877" timestamp="1600026272047" />
-    <state width="1588" height="162" key="GridCell.Tab.0.left" timestamp="1600145100289">
-      <screen x="0" y="23" width="1920" height="1012" />
-    </state>
-    <state width="1257" height="162" key="GridCell.Tab.0.left/-1440.552.1440.877/0.23.1920.1012@-1440.552.1440.877" timestamp="1600037032423" />
-    <state width="1588" height="162" key="GridCell.Tab.0.left/-1440.552.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600145100289" />
-    <state width="1257" height="124" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1600012632128" />
-    <state width="1257" height="162" key="GridCell.Tab.0.left/1920.587.1440.877/0.23.1920.1012@1920.587.1440.877" timestamp="1600026272047" />
-    <state width="1588" height="162" key="GridCell.Tab.0.right" timestamp="1600145100290">
-      <screen x="0" y="23" width="1920" height="1012" />
-    </state>
-    <state width="1257" height="162" key="GridCell.Tab.0.right/-1440.552.1440.877/0.23.1920.1012@-1440.552.1440.877" timestamp="1600037032424" />
-    <state width="1588" height="162" key="GridCell.Tab.0.right/-1440.552.1440.877/0.23.1920.1012@0.23.1920.1012" timestamp="1600145100290" />
-    <state width="1257" height="124" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1600012632129" />
-    <state width="1257" height="162" key="GridCell.Tab.0.right/1920.587.1440.877/0.23.1920.1012@1920.587.1440.877" timestamp="1600026272048" />
-    <state x="491" y="194" width="598" height="490" key="find.popup" timestamp="1599636614392">
-      <screen x="0" y="23" width="1440" height="832" />
-    </state>
-    <state x="491" y="194" width="598" height="490" key="find.popup/0.23.1440.832@0.23.1440.832" timestamp="1599636614392" />
+    <state x="613" y="393" key="#Go_Modules/0.23.1440.834@0.23.1440.834" timestamp="1607603577098" />
   </component>
 </project>

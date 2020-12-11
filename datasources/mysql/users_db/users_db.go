@@ -50,7 +50,7 @@ func init() {
 		panic(err)
 	}
 	if err := Client.Ping(); err != nil {
-		panic(err)
+		//panic(err)
 	}
 
 	log.Println("database successfully configured")

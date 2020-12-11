@@ -1,8 +1,8 @@
 package app
 
 import (
-	"go-microservces_users_api/controllers/ping"
-	"go-microservces_users_api/controllers/users"
+	"github.com/steven7/go-microservces_users_api/controllers/ping"
+	"github.com/steven7/go-microservces_users_api/controllers/users"
 )
 
 func mapUrls() {
@@ -15,4 +15,5 @@ func mapUrls() {
 	router.PATCH("/users/:user_id", users.Update)
 	router.DELETE("/users/:user_id", users.Delete)
 	router.GET("internal/users/search", users.Search)
+	router.POST("users/login", users.Login)
 }
