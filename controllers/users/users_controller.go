@@ -3,7 +3,7 @@ package users
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/steven7/bookstore_oath-go/oauth"
+	"github.com/steven7/bookstore_oauth-go/oauth"
 	"github.com/steven7/bookstore_utils-go/rest_errors"
 	"github.com/steven7/go-microservces_users_api/domain/users"
 	"github.com/steven7/go-microservces_users_api/services"
@@ -12,7 +12,7 @@ import (
 	"strconv"
 )
 
-func getUserId(userIdParam string) (int64, *rest_errors.RestErr) {
+func getUserId(userIdParam string) (int64, rest_errors.RestErr) {
 	// convert user id from string to int
 	userId, userErr := strconv.ParseInt(userIdParam, 10, 64)
 	if userErr != nil {
@@ -36,7 +36,7 @@ func Create(c *gin.Context) {
 	fmt.Println(dbError)
 
 	if dbError != nil {
-		c.JSON(dbError.Status, dbError)
+		c.JSON(dbError.Status(), dbError)
 		return
 	}
 	c.JSON(http.StatusCreated, user.Marshall(c.GetHeader("X-Public") == "true"))
@@ -44,19 +44,19 @@ func Create(c *gin.Context) {
 
 func Get(c *gin.Context) {
 	if err := oauth.AuthenticateRequest(c.Request); err != nil {
-		c.JSON(err.Status, err)
+		c.JSON(err.Status(), err)
 		return
 	}
 
 	// convert user id from string to int
 	userId, idErr := getUserId(c.Param("user_id"))
 	if idErr != nil {
-		c.JSON(idErr.Status, idErr)
+		c.JSON(idErr.Status(), idErr)
 		return
 	}
 	user, getError  := services.UsersService.GetUser(userId)
 	if getError != nil {
-		c.JSON(getError.Status, getError)
+		c.JSON(getError.Status(), getError)
 		return
 	}
 
@@ -71,7 +71,7 @@ func Update(c *gin.Context) {
 
 	userId, idErr := getUserId(c.Param("user_id"))
 	if idErr != nil {
-		c.JSON(idErr.Status, idErr)
+		c.JSON(idErr.Status(), idErr)
 		return
 	}
 
@@ -88,7 +88,7 @@ func Update(c *gin.Context) {
 
 	result, err := services.UsersService.UpdateUser(isPartial, user)
 	if err != nil {
-		c.JSON(err.Status, err)
+		c.JSON(err.Status(), err)
 		return
 	}
 	c.JSON(http.StatusOK, result.Marshall(c.GetHeader("X-Public") == "true"))
@@ -98,12 +98,12 @@ func Delete(c *gin.Context) {
 
 	userId, idErr := getUserId(c.Param("user_id"))
 	if idErr != nil {
-		c.JSON(idErr.Status, idErr)
+		c.JSON(idErr.Status(), idErr)
 		return
 	}
 
 	if err := services.UsersService.DeleteUser(userId); err != nil {
-		c.JSON(err.Status, err)
+		c.JSON(err.Status(), err)
 		return
 	}
 	c.JSON(http.StatusOK, map[string]string{"status": "deleted"})
@@ -114,7 +114,7 @@ func Search(c *gin.Context) {
 
 	users, err := services.UsersService.SearchUser(status)
 	if err != nil {
-		c.JSON(err.Status, err)
+		c.JSON(err.Status(), err)
 		return
 	}
 
@@ -130,7 +130,7 @@ func Login(c *gin.Context) {
 	}
 	user, err := services.UsersService.LoginUser(request)
 	if err != nil {
-		c.JSON(err.Status, err)
+		c.JSON(err.Status(), err)
 		return
 	}
 	c.JSON(http.StatusOK, user.Marshall(c.GetHeader("X-Public") == "true"))

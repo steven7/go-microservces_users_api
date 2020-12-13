@@ -46,10 +46,10 @@ github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINE
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/rogpeppe/go-internal v1.3.0/go.mod h1:M8bDsm7K2OlrFYOpmOWEs/qY81heoFRclV5y23lUDJ4=
-github.com/steven7/bookstore_oath-go v0.0.0-20201211095131-6778da2bd514 h1:5077M0f3e6HVP29rrOFM2ZZXcnoo1iAaPEhFmLcyZTc=
-github.com/steven7/bookstore_oath-go v0.0.0-20201211095131-6778da2bd514/go.mod h1:JTpsf8j9ht+iczqvstmhx6cBygWLZBw47ZhSw3La85Y=
-github.com/steven7/bookstore_utils-go v0.0.0-20201210150342-ac79e2f10ccb h1:U46m15w6SHpD+n005aibnI3mPhuH3IwINUpZztBC/r0=
-github.com/steven7/bookstore_utils-go v0.0.0-20201210150342-ac79e2f10ccb/go.mod h1:oGWY1MrGpwT24SasuapFeVBAKCUzElIqzrHB7qSs0WI=
+github.com/steven7/bookstore_oauth-go v1.0.0 h1:OzWYA+pESL+0mSJ9rxeNWBNa6i/VaH+Orxt/tcy/1V0=
+github.com/steven7/bookstore_oauth-go v1.0.0/go.mod h1:znbRJdt9KiRM0AmrxUypzWxd7rVB5yRwZ9L5qF9A9wg=
+github.com/steven7/bookstore_utils-go v0.0.0-20201213170924-1e4a38614203 h1:odeOqFmUIAXnKgN/BSrnzCMP1n0/SfQ7UIlxXAu+zuc=
+github.com/steven7/bookstore_utils-go v0.0.0-20201213170924-1e4a38614203/go.mod h1:uwWoFeatZAxm9ShDe6dvISohvj64cRhmjYNPZO0HgQM=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.4.0 h1:2E4SXV/wtOkTonXsotYi4li6zVWxYlZuYNCXe9XRJyk=
